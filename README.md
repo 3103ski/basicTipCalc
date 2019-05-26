@@ -1,0 +1,2 @@
+# basicTipCalc
+Basic tip calculator
