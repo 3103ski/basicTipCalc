@@ -14,6 +14,67 @@
 		<link rel="stylesheet" href="./index.css" />
 	</head>
 	<body>
+		<!-- 
+            TIP CALCULATOR PROJECT
+                ----------
+        - input total of bill
+        - input service quality
+            - will determine percentage of total to be tipped
+            - include option to enter custom tip percentage
+        - option to enter amount of people paying
+            - will provide due portions based on amount of people
+        - include button to retrieve calculations
+        - Include reset button
+        - have an itemized display 
+        
+        Extra ideas:
+            - Create a cover image for entire BG that expresses the mood of the service quality and changes with drop selection
+            - Give the calculator a shake animation any time that the calculator is reset
+            - Have an extra side feature tha pops out giving the user the option to enter in items one by one to calculate what their bill total will be? 
+         -->
+
+		<!-- Main body with background IMG -->
+		<div class="main__container">
+			<!-- BEGIN calculator -->
+			<div class="calc__body">
+				<div class="calc__title">
+					<h1 class="text">Tip Calculator</h1>
+				</div>
+				<!-- BEGIN user interface -->
+				<div class="calc__ui">
+					<p class="text labels">How much was the bill?</p>
+					<input type="text" class="bill__total" />
+					<p class="text labels">How was the service?</p>
+					<!-- QUALITY drop down -->
+					<select name="quality" id="">
+						<option value="0">The worse</option>
+						<option value="1">Kinda bad</option>
+						<option value="2" selected>Good</option>
+						<option value="3">Great!</option>
+						<option value="4">Beyond words AMAZING!</option>
+					</select>
+					<!-- Amount of payers -->
+					<p class="text labels">How many people are paying?</p>
+					<input type="number" />
+					<!-- SUMMARY -->
+					<p class="text summary hide__summary">
+						Ammount Due: $<span class="summary_due">50.00</span>
+					</p>
+					<p class="text summary hide__summary">
+						Tip: $<span class="summary_tip">15.00</span>
+					</p>
+					<p class="text summary hide__summary">
+						Total: $<span class="summary_total">65.00</span>
+					</p>
+					<p class="text summary hide__summary">
+						Each of you pay: $<span class="summary_each">13.00</span>
+					</p>
+					<!-- CALCULATE btn -->
+					<button class="calc__btn">CALCULATE</button>
+				</div>
+			</div>
+			<!-- END calculator -->
+		</div>
 		<script src="./index.js"></script>
 	</body>
 </html>
